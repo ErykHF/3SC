@@ -53,7 +53,7 @@ class PokemonDetailFragment : Fragment() {
                 it.moves.forEach { move ->
                     binding.moveName.text = getString(R.string.move, move.move.name.capitalize())
                 }
-                binding.seasonAppearance.text = getString(R.string.weight, it.weight.toString())
+                binding.weight.text = getString(R.string.weight, it.weight.toString())
 
             }
         }
