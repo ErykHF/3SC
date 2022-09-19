@@ -1,6 +1,7 @@
 package com.erykhf.android.a3sctest.di
 
 import com.erykhf.android.a3sctest.data.remote.PokeApi
+import com.erykhf.android.a3sctest.utils.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -18,7 +19,7 @@ class AppModule {
     @Provides
     fun getAllCharacters(): PokeApi {
         return Retrofit.Builder()
-            .baseUrl("https://pokeapi.co/api/v2/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(PokeApi::class.java)

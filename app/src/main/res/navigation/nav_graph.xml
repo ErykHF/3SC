@@ -9,5 +9,14 @@
         android:id="@+id/pokemonFragment"
         android:name="com.erykhf.android.a3sctest.fragments.pokemonlist.PokemonFragment"
         android:label="fragment_pokemon_list"
-        tools:layout="@layout/fragment_pokemon_list" />
+        tools:layout="@layout/fragment_pokemon_list" >
+        <action
+            android:id="@+id/goto_pokemon_detail"
+            app:destination="@id/pokemonDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonDetailFragment"
+        android:name="com.erykhf.android.a3sctest.fragments.pokemondetail.PokemonDetailFragment"
+        android:label="fragment_pokemon_detail"
+        tools:layout="@layout/fragment_pokemon_detail" />
 </navigation>

@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">3SC Test</string>
     <string name="retry_button">Retry</string>
+    <string name="pokemon_sprite">pokemon_sprite</string>
+    <string name="pokemon_name">pokemon_name</string>
+    <string name="an_error_occurred">An Error Occurred</string>
+    <string name="search">search</string>
+
+    <string name="type">Pokemon Type: %1$s</string>
+    <string name="stat">Base Stat: %1$s</string>
+    <string name="move">Move: %1$s</string>
+    <string name="weight">Weight: %1$s kg</string>
+
 </resources>

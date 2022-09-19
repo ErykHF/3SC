@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/3SCTest/app/src/main/res/layout/activity_main.xml" value="0.2942708333333333" />
         <entry key="..\:/AndroidStudioProjects/3SCTest/app/src/main/res/layout/fragment_pokemon.xml" value="0.2638888888888889" />
+        <entry key="..\:/AndroidStudioProjects/3SCTest/app/src/main/res/layout/fragment_pokemon_detail.xml" value="0.2942708333333333" />
         <entry key="..\:/AndroidStudioProjects/3SCTest/app/src/main/res/layout/fragment_pokemon_list.xml" value="0.28020833333333334" />
+        <entry key="..\:/AndroidStudioProjects/3SCTest/app/src/main/res/menu/pokemon_list_fragment_menu.xml" value="0.17592592592592593" />
       </map>
     </option>
   </component>

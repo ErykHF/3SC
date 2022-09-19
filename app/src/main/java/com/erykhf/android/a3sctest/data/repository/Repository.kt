@@ -1,11 +1,12 @@
 package com.erykhf.android.a3sctest.data.repository
 
+
 import com.erykhf.android.a3sctest.data.remote.PokeApi
-import com.erykhf.android.a3sctest.model.PokemonList
-import com.erykhf.android.a3sctest.model.Result
 import com.erykhf.android.a3sctest.utils.Resource
-import java.lang.Exception
+import com.erykhf.android.a3sctest.model.pokemonresponses.Pokemon
+import com.erykhf.android.a3sctest.model.pokemonresponses.PokemonList
 import javax.inject.Inject
+import kotlin.Exception
 
 class Repository @Inject constructor(private val api: PokeApi) {
 
@@ -19,4 +20,17 @@ class Repository @Inject constructor(private val api: PokeApi) {
 
         return Resource.Success(result)
     }
+
+
+    suspend fun getIndividualPokemonInfo(id: Int?): Resource<Pokemon> {
+        val result = try {
+
+            api.getPokemonInfo(id)
+        } catch (e: Exception) {
+            return Resource.Error("An Error Occured")
+        }
+
+        return Resource.Success(result)
+    }
+
 }
